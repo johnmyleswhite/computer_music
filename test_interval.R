@@ -1,0 +1,45 @@
+library('tuneR')
+
+base <- 440
+
+# Pythagorean Intervals
+writeWave(normalize(sine(base) + sine(interval('minor-second', tuning = 'pythagorean') * base), unit = '16'), 'intervals/minor_second_pythagorean.wav')
+writeWave(normalize(sine(base) + sine(interval('major-second', tuning = 'pythagorean') * base), unit = '16'), 'intervals/major_second_pythagorean.wav')
+writeWave(normalize(sine(base) + sine(interval('minor-third', tuning = 'pythagorean') * base), unit = '16'), 'intervals/minor_third_pythagorean.wav')
+writeWave(normalize(sine(base) + sine(interval('major-third', tuning = 'pythagorean') * base), unit = '16'), 'intervals/major_third_pythagorean.wav')
+writeWave(normalize(sine(base) + sine(interval('perfect-fourth', tuning = 'pythagorean') * base), unit = '16'), 'intervals/perfect_fourth_pythagorean.wav')
+writeWave(normalize(sine(base) + sine(interval('diminished-fifth', tuning = 'pythagorean') * base), unit = '16'), 'intervals/diminished_fifth_pythagorean.wav')
+writeWave(normalize(sine(base) + sine(interval('perfect-fifth', tuning = 'pythagorean') * base), unit = '16'), 'intervals/perfect_fifth_pythagorean.wav')
+writeWave(normalize(sine(base) + sine(interval('minor-sixth', tuning = 'pythagorean') * base), unit = '16'), 'intervals/minor_sixth_pythagorean.wav')
+writeWave(normalize(sine(base) + sine(interval('major-sixth', tuning = 'pythagorean') * base), unit = '16'), 'intervals/major_sixth_pythagorean.wav')
+writeWave(normalize(sine(base) + sine(interval('minor-seventh', tuning = 'pythagorean') * base), unit = '16'), 'intervals/minor_seventh_pythagorean.wav')
+writeWave(normalize(sine(base) + sine(interval('major-seventh', tuning = 'pythagorean') * base), unit = '16'), 'intervals/major_seventh_pythagorean.wav')
+writeWave(normalize(sine(base) + sine(interval('octave', tuning = 'pythagorean') * base), unit = '16'), 'intervals/octave_pythagorean.wav')
+
+# Just Intervals
+writeWave(normalize(sine(base) + sine(interval('minor-second', tuning = 'just') * base), unit = '16'), 'intervals/minor_second_just.wav')
+writeWave(normalize(sine(base) + sine(interval('major-second', tuning = 'just') * base), unit = '16'), 'intervals/major_second_just.wav')
+writeWave(normalize(sine(base) + sine(interval('minor-third', tuning = 'just') * base), unit = '16'), 'intervals/minor_third_just.wav')
+writeWave(normalize(sine(base) + sine(interval('major-third', tuning = 'just') * base), unit = '16'), 'intervals/major_third_just.wav')
+writeWave(normalize(sine(base) + sine(interval('perfect-fourth', tuning = 'just') * base), unit = '16'), 'intervals/perfect_fourth_just.wav')
+writeWave(normalize(sine(base) + sine(interval('diminished-fifth', tuning = 'just') * base), unit = '16'), 'intervals/diminished_fifth_just.wav')
+writeWave(normalize(sine(base) + sine(interval('perfect-fifth', tuning = 'just') * base), unit = '16'), 'intervals/perfect_fifth_just.wav')
+writeWave(normalize(sine(base) + sine(interval('minor-sixth', tuning = 'just') * base), unit = '16'), 'intervals/minor_sixth_just.wav')
+writeWave(normalize(sine(base) + sine(interval('major-sixth', tuning = 'just') * base), unit = '16'), 'intervals/major_sixth_just.wav')
+writeWave(normalize(sine(base) + sine(interval('minor-seventh', tuning = 'just') * base), unit = '16'), 'intervals/minor_seventh_just.wav')
+writeWave(normalize(sine(base) + sine(interval('major-seventh', tuning = 'just') * base), unit = '16'), 'intervals/major_seventh_just.wav')
+writeWave(normalize(sine(base) + sine(interval('octave', tuning = 'just') * base), unit = '16'), 'intervals/octave_just.wav')
+
+# 12 Tet Intervals
+writeWave(normalize(sine(base) + sine(interval('minor-second', tuning = '12tet') * base), unit = '16'), 'intervals/minor_second_12tet.wav')
+writeWave(normalize(sine(base) + sine(interval('major-second', tuning = '12tet') * base), unit = '16'), 'intervals/major_second_12tet.wav')
+writeWave(normalize(sine(base) + sine(interval('minor-third', tuning = '12tet') * base), unit = '16'), 'intervals/minor_third_12tet.wav')
+writeWave(normalize(sine(base) + sine(interval('major-third', tuning = '12tet') * base), unit = '16'), 'intervals/major_third_12tet.wav')
+writeWave(normalize(sine(base) + sine(interval('perfect-fourth', tuning = '12tet') * base), unit = '16'), 'intervals/perfect_fourth_12tet.wav')
+writeWave(normalize(sine(base) + sine(interval('diminished-fifth', tuning = '12tet') * base), unit = '16'), 'intervals/diminished_fifth_12tet.wav')
+writeWave(normalize(sine(base) + sine(interval('perfect-fifth', tuning = '12tet') * base), unit = '16'), 'intervals/perfect_fifth_12tet.wav')
+writeWave(normalize(sine(base) + sine(interval('minor-sixth', tuning = '12tet') * base), unit = '16'), 'intervals/minor_sixth_12tet.wav')
+writeWave(normalize(sine(base) + sine(interval('major-sixth', tuning = '12tet') * base), unit = '16'), 'intervals/major_sixth_12tet.wav')
+writeWave(normalize(sine(base) + sine(interval('minor-seventh', tuning = '12tet') * base), unit = '16'), 'intervals/minor_seventh_12tet.wav')
+writeWave(normalize(sine(base) + sine(interval('major-seventh', tuning = '12tet') * base), unit = '16'), 'intervals/major_seventh_12tet.wav')
+writeWave(normalize(sine(base) + sine(interval('octave', tuning = '12tet') * base), unit = '16'), 'intervals/octave_12tet.wav')
