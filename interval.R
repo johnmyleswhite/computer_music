@@ -62,7 +62,7 @@ interval <- function(interval = 'octave', tuning = '12tet')
               'minor-seventh' = 2 ^ (10 / 12),
               'major-seventh' = 2 ^ (11 / 12),
               'octave'= 2 ^ (12 / 12))
-
+  
   if (tuning == 'pythagorean')
   {
     return(pythagorean[[interval]])

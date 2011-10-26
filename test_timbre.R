@@ -1,4 +1,5 @@
-source('timbres/timbre.R')
+library('tuneR')
+source('timbre.R')
 
 writeWave(note(data.frame(Amplitude = c(1), Multiplier = c(1))), 'timbres/timbre1.wav')
 writeWave(note(data.frame(Amplitude = c(1, 0.5, 0.5), Multiplier = c(1, 2, 3))), 'timbres/timbre2.wav')

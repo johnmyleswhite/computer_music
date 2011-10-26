@@ -1,4 +1,5 @@
 library('tuneR')
+source('interval.R')
 
 base <- 440
 
